@@ -11,7 +11,7 @@
         "metadata": {
           "description": "Name of the vm, will be used as DNS Name for the Public IP used to access the Virtual Machine."
         },
-        "defaultValue": "FSLT-3"
+        "defaultValue": "FSLT-1"
       }
     },
     "functions": [],
