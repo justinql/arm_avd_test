@@ -5,6 +5,12 @@
       "location": {
          "type": "string",
          "defaultValue": "canadacentral"
+      },
+      "vmName": {
+        "type": "string",
+        "metadata": {
+          "description": "Name of the vm, will be used as DNS Name for the Public IP used to access the Virtual Machine."
+        }
       }
     },
     "functions": [],
@@ -31,6 +37,6 @@
          }
        }
     ],
-    "outputs": {},
+    "outputs": {}
    
  }
