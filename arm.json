@@ -1,7 +1,9 @@
 {
    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": {},
+    "parameters": {
+      location: "canadacentral"
+    },
     "functions": [],
     "variables": {},
     "resources": [
@@ -11,7 +13,6 @@
          "apiVersion": "2015-05-01-preview",
          "location": "[parameters('location')]",
          "dependsOn": [
-             "[concat('Microsoft.Compute/virtualMachines/',parameters('vmName'))]"
          ],
          "properties": {
              "publisher": "Microsoft.Compute",
