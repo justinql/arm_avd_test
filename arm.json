@@ -5,6 +5,7 @@
       "location": {
          "type": "string",
          "defaultValue": "canadacentral"
+      }
     },
     "functions": [],
     "variables": {},
