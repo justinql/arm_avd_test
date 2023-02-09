@@ -13,9 +13,9 @@
        "autoUpgradeMinorVersion":true,
        "settings": {
            "fileUris": [
-           "http://Yourstorageaccount.blob.core.windows.net/customscriptfiles/start.ps1"
+           "https://community.chocolatey.org/install.ps1"
        ],
-       "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File start.ps1"
+       "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File install.ps1"
      }
    }
  }
