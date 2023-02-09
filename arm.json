@@ -4,9 +4,6 @@
     "parameters": {
       "location": {
          "type": "string",
-         "metadata": {
-            "description": "Location"
-         }
          "defaultValue": "canadacentral"
     },
     "functions": [],
