@@ -30,3 +30,6 @@ Register-ScheduledTask -Xml (get-content $CurrentLocation"\Microsoft_Office_week
 #VS Code install
 #Visual Studio
 choco install vscode 
+choco install sql-server-management-studio
+choco upgrade nodejs --version "'16.13.2'" 
+choco install visualstudio2022enterprise --package-parameters "--add Microsoft.VisualStudio.Workload.CoreEditor --add Microsoft.VisualStudio.Workload.Data --add Microsoft.VisualStudio.Workload.DataScience --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Workload.Office  --add  Microsoft.VisualStudio.Workload.VisualStudioExtension  --includeRecommended --passive --locale en-CA"
