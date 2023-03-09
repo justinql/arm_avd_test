@@ -27,3 +27,6 @@ Register-ScheduledTask -Xml (get-content $CurrentLocation"\Chocolately_upgrade.x
 Register-ScheduledTask -Xml (get-content $CurrentLocation"\Microsoft_Office_weekly_update.xml" | out-string) -TaskName "Microsoft Office weekly update"  -TaskPath "\OfficeUpdate" -force
 
 
+#VS Code install
+#Visual Studio
+choco install vscode 
