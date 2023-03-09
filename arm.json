@@ -31,10 +31,12 @@
              "autoUpgradeMinorVersion":true,
              "settings": {
                  "fileUris": [
-                 "https://community.chocolatey.org/install.ps1"
+                 "https://community.chocolatey.org/install.ps1",
+                 "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Imports_Tasks.ps1"
              ],
              "commandToExecute": [
-              "powershell.exe -ExecutionPolicy Unrestricted -File install.ps1"
+              "powershell.exe -ExecutionPolicy Unrestricted -File install.ps1",
+              "powershell.exe -ExecutionPolicy Unrestricted -File Imports_Tasks.ps1"
 
             ]
            }
