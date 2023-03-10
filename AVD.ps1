@@ -29,6 +29,4 @@ Register-ScheduledTask -Xml (get-content $CurrentLocation"\Microsoft_Office_week
 
 #VS Code install
 #Visual Studio
-choco install -y vscode 
-choco install -y sql-server-management-studio
 choco upgrade -y nodejs --version "'16.13.2'" 
