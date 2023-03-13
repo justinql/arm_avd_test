@@ -6,9 +6,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 #getting current directory
 $CurrentLocation= Get-Location 
 
-#installing chocolatey
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+#Chocolately installation
+$URL= "https://community.chocolatey.org/ChocolateyInstall.ps1" 
+Invoke-WebRequest $URL -OutFile "ChocolateyInstall.ps1" 
 
+.$CurrentLocation"\ChocolateyInstall.ps1" 
 
 #Chocolately xmlfile downlaod
 $URL= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Chocolately_upgrade.xml" 
