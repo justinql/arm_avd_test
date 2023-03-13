@@ -6,12 +6,11 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 #getting current directory
 $CurrentLocation= Get-Location 
 
-#installing chocolatey
 #Chocolately xmlfile downlaod
-$URL= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/ChocolateyInstall.ps1" 
+$URL= "https://community.chocolatey.org/ChocolateyInstall.ps1" 
 Invoke-WebRequest $URL -OutFile "ChocolateyInstall.ps1" 
 
-.\$CurrentLocation"\ChocolateyInstall.ps1" 
+.$CurrentLocation"\ChocolateyInstall.ps1" 
 
 #Chocolately xmlfile downlaod
 $URL= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Chocolately_upgrade.xml" 
