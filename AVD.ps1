@@ -33,11 +33,12 @@ Register-ScheduledTask -Xml (get-content $CurrentLocation"\Microsoft_Office_week
 choco install  vscode -y -wait
 choco install  sql-server-management-studio -y -wait
 choco upgrade  nodejs --version "'16.13.2'" -y -wait
+choco install googlechrome -y -wait
+choco install texstudio -y -wait
+choco install miktex -y -wait
+choco install strawberryperl -y -wait
 choco install visualstudio2022enterprise --package-parameters "--add Microsoft.VisualStudio.Workload.CoreEditor --add Microsoft.VisualStudio.Workload.Data --add Microsoft.VisualStudio.Workload.DataScience --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Workload.Office  --add  Microsoft.VisualStudio.Workload.VisualStudioExtension  --includeRecommended --passive --locale en-CA" -y -wait
-choco install googlechrome
-choco install texstudio
-choco install miktex
-choco install strawberryperl
+
 
 
 
