@@ -13,8 +13,8 @@ Invoke-WebRequest $URL -OutFile "ChocolateyInstall.ps1"
 .$CurrentLocation"\ChocolateyInstall.ps1" 
 
 #Chocolately xmlfile downlaod
-$URL= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Chocolately_upgrade.xml" 
-Invoke-WebRequest $URL -OutFile "Chocolately_upgrade.xml" 
+$URL1= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Chocolately_upgrade.xml" 
+Invoke-WebRequest $URL1 -OutFile "Chocolately_upgrade.xml" 
 
 
 #office xmlfile update
