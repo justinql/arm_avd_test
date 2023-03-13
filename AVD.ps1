@@ -2,17 +2,19 @@
 #forcing the execution
 Set-ExecutionPolicy Bypass -Scope Process -Force
 
-#installing chocolatey
-$URL= "https://community.chocolatey.org/install.ps1'" 
-Invoke-WebRequest $URL -OutFile "install.ps1" 
-invoke-expression -Command .\install.ps1
 
 #getting current directory
 $CurrentLocation= Get-Location 
 
 #Chocolately xmlfile downlaod
-$URL= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Chocolately_upgrade.xml" 
-Invoke-WebRequest $URL -OutFile "Chocolately_upgrade.xml" 
+$URL= "https://community.chocolatey.org/ChocolateyInstall.ps1" 
+Invoke-WebRequest $URL -OutFile "ChocolateyInstall.ps1" 
+
+.$CurrentLocation"\ChocolateyInstall.ps1" -y -wait
+
+#Chocolately xmlfile downlaod
+$URL1= "https://raw.githubusercontent.com/justinql/arm_avd_test/scheduled-taks/Chocolately_upgrade.xml" 
+Invoke-WebRequest $URL1 -OutFile "Chocolately_upgrade.xml" 
 
 
 #office xmlfile update
@@ -34,7 +36,11 @@ choco install  vscode -y -wait
 choco install  sql-server-management-studio -y -wait
 choco upgrade  nodejs --version "'16.13.2'" -y -wait
 choco install visualstudio2022enterprise --package-parameters "--add Microsoft.VisualStudio.Workload.CoreEditor --add Microsoft.VisualStudio.Workload.Data --add Microsoft.VisualStudio.Workload.DataScience --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Microsoft.VisualStudio.Workload.Node --add Microsoft.VisualStudio.Workload.Office  --add  Microsoft.VisualStudio.Workload.VisualStudioExtension  --includeRecommended --passive --locale en-CA" -y -wait
-choco install googlechrome -y -wait
-choco install texstudio -y -wait
-choco install miktex -y -wait
-choco install strawberryperl -y -wait
+choco install googlechrome
+choco install texstudio
+choco install miktex
+choco install strawberryperl
+
+
+
+
